@@ -1,11 +1,11 @@
-public class ContaPoupaca extends Conta{
+public class ContaPoupanca extends Conta{
     private int Rendimento;
 
-    public int getDiaRendimento() {
+    public int getRendimento() {
         return Rendimento;
     }
 
-    public void setDiaRendimento(int Rendimento) {
+    public void setRendimento(int Rendimento) {
         this.Rendimento = Rendimento;
     }
     public double taxa(double valor){
