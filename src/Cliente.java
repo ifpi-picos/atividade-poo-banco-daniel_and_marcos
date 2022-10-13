@@ -1,12 +1,12 @@
 import java.util.Date;
 public class Cliente {
 	private String nome;
-	private int cpf;
+	private String cpf;
 	private Date dataNasc;
 	private String endereco;
 	private Conta conta;
 	
-	public Cliente (String nome,Date dataNasc,int cpf,String endereco){
+	public Cliente (String nome,Date dataNasc,String cpf,String endereco){
         this.nome = nome;
         this.dataNasc = dataNasc;
         this.cpf = cpf;
@@ -22,7 +22,7 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 
