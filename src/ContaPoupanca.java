@@ -1,4 +1,8 @@
 public class ContaPoupanca extends Conta{
+    public ContaPoupanca(int numAgencia, int numConta, double saldo, double transferencia) {
+        super(numAgencia, numConta, saldo);
+        //TODO Auto-generated constructor stub
+    }
     private int Rendimento;
 
     public int getRendimento() {
@@ -9,7 +13,7 @@ public class ContaPoupanca extends Conta{
         this.Rendimento = Rendimento;
     }
     public double taxa(double valor){
-		taxa= 5/100 * valor;
+		double taxa = 5/100 * valor;
 		return taxa;
 	}
     

@@ -1,27 +1,17 @@
 public class ContaCorrente extends Conta {
     private double chequeEspecial;
-    
 
+    public ContaCorrente(int numAgencia, int numConta, double saldo) {
+        super(numAgencia, numConta, saldo);
+    }
+    
     public double getChequeEspecial() {
         return chequeEspecial;
     }
-    public double getSaldo() {
-        return saldo;
-    }
-    public boolean sacar(double valor){
-        if (valor<=saldo){
-            saldo = saldo - valor;
-            return true;
-            
-        }else{
-            return false;
-        }
-    }
-	public double depositar(double valor){
-		saldo= saldo + valor;
-		return saldo;
-	}
 
-
+    @Override
+    public boolean sacar(double valor) {
+        return super.sacar(valor);
+    }
     
     }

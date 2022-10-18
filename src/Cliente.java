@@ -4,7 +4,7 @@ public class Cliente {
 	private String cpf;
 	private Date dataNasc;
 	private String endereco;
-	private Conta conta;
+	
 	
 	public Cliente (String nome,Date dataNasc,String cpf,String endereco){
         this.nome = nome;
@@ -34,9 +34,7 @@ public class Cliente {
 		return endereco;
 	}
 
-	public Conta getConta() {
-		return conta;
-	}
+	
 
 
 }
