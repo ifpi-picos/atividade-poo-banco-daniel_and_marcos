@@ -13,5 +13,17 @@ public class ContaCorrente extends Conta {
     public boolean sacar(double valor) {
         return super.sacar(valor);
     }
-    
+    @Override
+    public double depositar(double valor){
+		
+		return super.depositar(valor);
+	}
+    @Override
+    public void transferir(double saldo, Conta destinatario){
+		this.saldo+= saldo;
+		destinatario.saldo+=saldo;
+             
     }
+}
+
+    

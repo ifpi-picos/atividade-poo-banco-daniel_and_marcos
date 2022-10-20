@@ -44,6 +44,11 @@ public class Conta {
 		saldo= saldo + valor;
 		return saldo;
 	}
+	public void transferir(double saldo, Conta destinatario){
+		this.saldo+= saldo;
+		destinatario.saldo+=saldo;
+
+	}
 	 }
 
 
