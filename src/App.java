@@ -1,11 +1,4 @@
-//import java.time.LocalDate;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Date;
-import java.util.Scanner;
-//import java.util.ArrayList;
-//import java.util.List;
 
 public class App {
 	public static void main(String[] args) throws Exception {
