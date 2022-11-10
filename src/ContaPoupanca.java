@@ -22,7 +22,7 @@ public class ContaPoupanca extends Conta{
    	 
     @Override
     public double depositar(double valor) {
-    	enviaNotificacao("deposito", valor);
+    	enviaNotificacao("deposito de ", valor);
         return super.depositar(valor+(valor * rendimento));
     }
     @Override
@@ -32,7 +32,7 @@ public class ContaPoupanca extends Conta{
     	        double taxa = 100*0.05;
     	        saldo -= (valor+ taxa);
     	        destinatario.depositar(valor);
-    	        enviaNotificacao("Transferência", valor);
+    	        enviaNotificacao("Transferência de ", valor);
     	        System.out.println("Transferência efetuada com sucesso");
     	    }
 

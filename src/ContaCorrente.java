@@ -29,7 +29,7 @@ public class ContaCorrente extends Conta {
         if(quantiTransf<2){
         	saldo-=valor;
         	destinatario.depositar(valor);
-        	enviaNotificacao("transferência", valor);
+        	enviaNotificacao("transferência de ", valor);
         	quantiTransf++;
         	System.out.println("Transferência efetuada com sucesso");
         
