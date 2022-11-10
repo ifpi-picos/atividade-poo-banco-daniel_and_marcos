@@ -11,7 +11,7 @@ public class Conta {
 		this.numConta = numConta;
 		this.saldo = saldo;
 		this.setCliente(cliente);
-			
+		this.notificacao = notificacao;	
 	}
 	public Cliente getCliente() {
 		return cliente;
@@ -56,13 +56,14 @@ public class Conta {
 	}
 	public double depositar(double valor){
 		saldo= saldo + valor;
-		enviaNotificacao("deposito", valor);
+		enviaNotificacao("deposito de ", valor);
 		return saldo;
 
 	}
 	
 protected void enviaNotificacao(String operacao, double valor) {
 		// TODO Auto-generated method stub
+		notificacao.enviaNotificacao(operacao, valor);
 		
 	}
 public void transferir(Conta destinatario, double valor){
