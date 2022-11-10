@@ -1,4 +1,5 @@
-import java.text.DateFormat;
+
+import java.text.SimpleDateFormat;
 
 public class App {
 	public static void main(String[] args) throws Exception {
@@ -19,7 +20,7 @@ public class App {
 		Conta c1=new ContaPoupanca(8888, 9999, 700, cl3, new Sms());
 		
 		Cliente cl4 = new Cliente("Marcos", sdf.parse("15/05/2002"), "22222222", "shnfidsnnds");
-		Conta c2=new ContaPoupanca(5555, 66666, 700, cl4, null);
+		Conta c2=new ContaPoupanca(5555, 66666, 700, cl4, new Email());
 		c1.transferir(c2, 100);
 		
 
